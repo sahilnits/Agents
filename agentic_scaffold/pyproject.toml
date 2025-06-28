@@ -24,3 +24,10 @@ test_agent = "plugins.test_agent.agent:TestAgent"
 
 [tool.black]
 line-length = 88
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]

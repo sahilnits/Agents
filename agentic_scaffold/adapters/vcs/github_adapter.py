@@ -1,4 +1,4 @@
-import requests, os
+import requests
 
 class GitHubAdapter:
     def __init__(self, repo: str, token: str):

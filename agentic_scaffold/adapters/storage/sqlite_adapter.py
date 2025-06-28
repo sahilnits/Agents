@@ -1,4 +1,4 @@
-import aiosqlite, asyncio
+import aiosqlite
 
 class SQLiteAdapter:
     DB_PATH = "agentic.db"
