@@ -1,3 +1,6 @@
-def test_imports():
-    import orchestrator.registry as r
-    assert r.get_orchestrator() is not None
+from agentic_scaffold.orchestrator.registry import get_orchestrator
+
+
+def test_imports() -> None:
+    assert get_orchestrator() is not None
+
