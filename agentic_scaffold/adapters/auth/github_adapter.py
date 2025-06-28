@@ -1,4 +1,4 @@
-import os, requests
+import requests
 
 class GitHubOAuthAdapter:
     def get_user(self, token: str) -> dict:
