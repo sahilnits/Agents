@@ -1,6 +1,6 @@
 import streamlit as st
-from ./orchestrator.registry import get_orchestrator
-from ./orchestrator.context import SessionContext
+from orchestrator.registry import get_orchestrator
+from orchestrator.context import SessionContext
 
 
 def main() -> None:
