@@ -1,0 +1,26 @@
+[project]
+name = "agentic-facilitator"
+version = "0.1.0"
+description = "Modular agentic platform to accelerate project setup and execution."
+authors = [{name="Agentic Bot"}]
+dependencies = [
+    "streamlit>=1.35.0",
+    "pydantic>=2.7",
+    "sqlalchemy>=2.0",
+    "aiosqlite>=0.19",
+    "requests>=2.31",
+    "rich>=13.7",
+]
+optional-dependencies.dev = [
+    "pytest>=8.2",
+    "black>=24.4",
+    "mypy>=1.10",
+]
+
+[project.entry-points."agentic_agents"]
+req_agent = "plugins.req_agent.agent:ReqAgent"
+code_agent = "plugins.code_agent.agent:CodeAgent"
+test_agent = "plugins.test_agent.agent:TestAgent"
+
+[tool.black]
+line-length = 88
